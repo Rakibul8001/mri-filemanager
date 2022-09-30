@@ -16,10 +16,9 @@ import {MRIfileManagerRender, MRI_Uploader, FileSelectButton} from 'mri-filemana
 ```
 
 ```
-  const [val, setVal] = useState({
-    upload_files:[],
-    upload_ids:[],
-  })
+1. Wrap your component with this MRIfileManagerRender  where you want to integrate file-manager.
+2. Make sure MRI_Uploader inside modal body.
+3. In your form file selecting button should be FileSelectButton.
 
 ```
 
