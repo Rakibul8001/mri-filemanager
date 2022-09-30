@@ -3,7 +3,26 @@ This is a File manager for react or nextjs.
 
 # Install
 
-## `npm i mri-filemanager`
+```
+npm i mri-filemanager
+
+```
+
+# Usage
+
+```
+import {MRIfileManagerRender, MRI_Uploader, FileSelectButton} from 'mri-filemanager'
+
+```
+
+```
+  const [val, setVal] = useState({
+    upload_files:[],
+    upload_ids:[],
+  })
+
+```
+
 
 # Getting Started with Create React App
 
