@@ -1,8 +1,9 @@
 {
   "name": "mri-filemanager",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "MRI filemanager",
   "author": "Md Rakibul Islam",
+  "license": "ISC",
   "keywords": [
     "filemanager",
     "file-uploader",
@@ -14,6 +15,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakibul8001/mri-filemanager.git"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@mdrakibul8001/axios": "^1.0.1",
