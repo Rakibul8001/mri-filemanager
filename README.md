@@ -4,14 +4,14 @@ This is a File manager for react or nextjs.
 # Install
 
 ```
-npm i mri-filemanager
+npm i @mdrakibul8001/filemanager
 
 ```
 
 # Usage
 
 ```
-import {MRIfileManagerRender, MRI_Uploader, FileSelectButton} from 'mri-filemanager'
+import { FileSelectButton, MRIfileManagerRender, MRI_Uploader } from '@mdrakibul8001/filemanager';
 
 ```
 
