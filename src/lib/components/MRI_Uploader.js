@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import toast from './Toast';
-import Axios from "./Axios";
+import MRIAxios from "./Axios";
 import MyPagination from "./MyPagination";
 import PropagateLoading from "./PropagateLoading";
 
 const MRI_Uploader=({onSubmitUploads,selectLoading})=>{
 
-    const {http} = Axios();
+    const {http} = MRIAxios();
     const ref = useRef();
   
     const notify = React.useCallback((type, message) => {

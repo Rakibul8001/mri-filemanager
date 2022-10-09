@@ -1,10 +1,10 @@
 import React,{ useState,useCallback } from 'react';
 import { useEffect } from 'react';
 import toast from './Toast';
-import Axios from './Axios';
+import MRIAxios from './Axios';
 
 export default function MRIfileManagerRender(props) {
-  const {http} = Axios();
+  const {http} = MRIAxios();
 
   const notify = React.useCallback((type, message) => {
       toast({ type, message });
