@@ -22,6 +22,66 @@ import { FileSelectButton, MRIfileManagerRender, MRI_Uploader } from '@mdrakibul
 
 ```
 
+```
+const [roomType, setRoomType] = useState({
+    upload_files:[],
+    upload_ids:[],
+});
+
+const [arr, setArr]=useState([]);
+const [filesArr, setFilesArr]=useState([]);
+
+// start File manager section
+
+  //function set selected files ids
+  const setFilesData=(data)=>{
+    for (let i = 0; i < data.length; i++) {
+      filesArr.push(data[i]);
+    }
+
+    setRoomType(prev=>({
+      ...prev, upload_files:filesArr
+    }))
+  }
+
+    //function set selected files ids
+    const setIds=(Ids)=>{
+  
+      for (let i = 0; i < Ids.length; i++) {
+         arr.push(Ids[i]);
+      }
+  
+      setRoomType(prev=>({
+        ...prev, upload_ids:arr
+      }))
+
+    };
+  
+    const removePhoto = (id) => {
+      //Ids array remove
+      let filtered = arr.filter(function(item){ 
+        return item != id;
+      });
+
+      setArr(filtered);
+  
+      setRoomType(prev=>({
+        ...prev, upload_ids:filtered
+      }))
+
+      //remove files array of objects
+      const newList = filesArr.filter((item) => item.id !== id);
+      setFilesArr(newList);
+  
+      setRoomType(prev=>({
+        ...prev, upload_files:newList
+      }))
+  
+    }
+// End File manager section
+
+```
+
 
 # Getting Started with Create React App
 
